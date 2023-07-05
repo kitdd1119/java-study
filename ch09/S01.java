@@ -75,5 +75,32 @@ public class S01 {
         // 객체끼리 비교는 equals를 권장함.
         System.out.println("bird1.equals(bird2) : " + bird1.equals(bird2));
         System.out.println("bird4.equals(bird5) : " + bird4.equals(bird5));
+
+
+        // 문자열 / 문자배열
+        String korean = "가나다라";
+        String[] split = korean.split("");
+
+        // 문자열의 문자(char)를 반복할 때
+        for (int i = 0; i < korean.length(); i++) {
+            System.out.println(korean.charAt(i));
+        }
+
+        // 위와 같음
+        for (int i = 0; i < korean.length(); i++) {
+            System.out.println(split[i]);
+        }
+
+        // 문자열의 문자배열로 바꿔서 반복할 때
+        // 각 문자에 문자열 메소드를 사용하고 싶을 때
+        for (int i = 0; i < korean.length(); i++) {
+            System.out.println(split[i].repeat(2));
+        }
+
+        // 문자열을 나란히 표현하고 싶을 때
+        System.out.println("String.join(\"\", split) : " + String.join("", split));
+        // 나란히 정렬된 문자열 사이에 무언가 넣고 싶을 때 
+        System.out.println("String.join(\"a\", split) : " + String.join("a", split));
+
     }
 }
