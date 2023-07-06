@@ -1,3 +1,5 @@
+package ch01;
+
 
 public class Study04 {
     // 함수

@@ -1,5 +1,5 @@
 // 폴더 경로 알린거임
-package test;
+package ch01.test;
 
 public class Solution {
     public int solution(int num1, int num2) {
